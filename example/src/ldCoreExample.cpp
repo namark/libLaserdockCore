@@ -30,7 +30,6 @@
 
 #include "src/Games/ldSpiralFighterGame.h"
 #include "src/Visualizations/Visualizers/Animation/ldGoGoGirlAnimationVisualizer.h"
-#include "src/Visualizations/Visualizers/Animation/ldGoGoGirlAnimationVisualizer.h"
 #include "src/Visualizations/Visualizers/Clock/ldAnalogClockVisualizer.h"
 #include "src/Visualizations/Visualizers/Simple/ldCircleVisualizer.h"
 #include "src/Visualizations/Visualizers/Simple/ldSquareVisualizer.h"
