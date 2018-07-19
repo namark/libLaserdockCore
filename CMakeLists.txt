@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
+
 message(STATUS "CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
 message(STATUS "CMAKE_GENERATOR: ${CMAKE_GENERATOR}")
 
@@ -45,10 +46,12 @@ if(NOT LD_ANDROID_BUILD)
         # win
         if(WIN32)
             set(QTDIR "${QT_BASE_DIR}/msvc2015")
-        endif()
         # mac
-        if(APPLE)
+        elseif(APPLE)
             set(QTDIR "${QT_BASE_DIR}/clang_64")
+        # gnu
+        else()
+            set(QTDIR "${QT_BASE_DIR}/gcc_64")
         endif()
     endif()
 endif()

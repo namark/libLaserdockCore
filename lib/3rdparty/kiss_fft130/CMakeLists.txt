@@ -1,5 +1,9 @@
 set(CMAKE_AUTOMOC OFF)
 
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+	add_definitions(-fPIC)
+endif()
+
 # sources
 set(LIBFFT_SOURCE_FILES
     _kiss_fft_guts.h

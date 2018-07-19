@@ -4,6 +4,10 @@ include_directories(src)
 
 add_definitions(-D_USE_MATH_DEFINES)
 
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+	add_definitions(-fPIC)
+endif()
+
 set(AUBIO_SRC
     src/aubio.h
     src/aubio_priv.h
